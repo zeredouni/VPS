@@ -1,11 +1,15 @@
 # Linux-to-Windows-with-QEMU
 
-A Shell Script to Auto install Windows Server on your Linux System. [Right now, it supports 2012 R2 < evaluation/180 days trial > copy]
+A Shell Script to Auto install Windows Server on your Linux System. 
+
+[Right now, it supports 2012 R2 < evaluation/180 days trial > copy]
 
 Script would use QEMU-KVM portable software for Virtualization purpose.
-Since QEMU is a portable s/w, so it can reside in temporary RAM.
+
+Since QEMU is a portable s/w, so it can resize in temporary RAM.
 
 Actually script is semi-automatic.
+
 All Linux commands part(such as downloading Windows ISO image, gathering system info, choosing disk/partition, managing RAM , attaching required windows s/w in CDROM) would be handled by script automatically.
 
 And rest of the windows part(clicking, selecting, setting Administrator password ) need to be done manually by any Free VNC windows software.
@@ -18,6 +22,7 @@ I also attached Firefox App on CD-ROM, install that, so you don't need to face "
 ---
 
 ## Requirements
+
 A SSH client such as Putty : https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 
 A VNC software such as RealVNC : https://www.realvnc.com/en/connect/download/viewer/
@@ -61,7 +66,7 @@ Just run below five commands one after another :
 
 `mkdir /media/script && mount -t tmpfs -o size=1m tmpfs /media/script`
 
-`wget -P /media/script https://raw.githubusercontent.com/kmille36/Linux-to-Windows-with-QEMU/master/mediabots_Linux-to-Windows.sh`
+`wget -P /media/script https://raw.githubusercontent.com/daibangcam/Linux-to-Windows-with-QEMU/master/mediabots_Linux-to-Windows.sh`
 
 `chmod +x /media/script/*`
 
@@ -110,23 +115,6 @@ CASE - 2
 Your Server/VPS Free RAM size < 5 GB
   
   start from <Case - 1.b>
-
----
-
-## Demo Video
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=84gVQXXJF8A" target="_blank"><img src="http://img.youtube.com/vi/84gVQXXJF8A/0.jpg" 
-alt="Turn your Linux VPS or Server into Windows Server automatically using Shell script trough QEMU-KVM" width="480" height="360" border="10" /></a>
-
-OR
-
-http://bit.ly/Linux-to-Windows
-
----
-
-## Screenshots
-
-https://imgur.com/a/w7WszdK (19 images included)
 
 ---
 
@@ -193,8 +181,3 @@ https://archive.org/download/windowsserver2016datacenterevaluationcopy/Windows_S
 https://download.microsoft.com/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso
 
 ---
-
-## Reference
-
-askubuntu.com, stackexchange.com, stackoverflow.com, ubuntuforums.com, tecmint.com, qemu.org, myrlse@wjunction, exchangepedia.com 
-
