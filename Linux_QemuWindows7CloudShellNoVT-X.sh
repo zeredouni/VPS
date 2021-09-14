@@ -30,4 +30,4 @@ echo "Email: daibangcam@gmail.com"
 echo "Website: hano.cf"
 echo "================================"
 cpu=$(echo nproc | bash)
-sudo qemu-system-x86_64 -vnc :0 -hda lite7.qcow2  -smp cores=$cpu  -m 3072M -machine usb=on -device usb-tablet > /dev/null 2>&1
+sudo qemu-system-x86_64 -vnc :0 -hda lite7.qcow2  -smp cores=$cpu  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1
